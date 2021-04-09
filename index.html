@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="fr-FR">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="fr-FR">
+<![endif]-->
+<!--[if !(IE 7) & !(IE 8)]><!-->
+<html lang="fr-FR"><!--<![endif]--><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<title>FBIMATRIX: Parallel and Distributed Markov Chain Monte Carlo for 
+Bayesian Inference in Matrix and Tensor Factorization Models | 
+International collaborative research project funded by ANR and TUBITAK</title>
+<link rel="profile" href="https://gmpg.org/xfn/11">
+<link rel="pingback" href="https://fbimatrix.wp.imt.fr/xmlrpc.php">
+<!--[if lt IE 9]>
+<script src="https://fbimatrix.wp.imt.fr/wp-content/themes/twentytwelve/js/html5.js?ver=3.7.0" type="text/javascript"></script>
+<![endif]-->
+<meta name="robots" content="max-image-preview:large">
+<link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link href="https://fonts.gstatic.com/" crossorigin="" rel="preconnect">
+<link rel="alternate" type="application/rss+xml" title="FBIMATRIX: Parallel and Distributed Markov Chain Monte Carlo for Bayesian Inference in Matrix and Tensor Factorization Models » Flux" href="https://fbimatrix.wp.imt.fr/feed/">
+<link rel="alternate" type="application/rss+xml" title="FBIMATRIX: Parallel and Distributed Markov Chain Monte Carlo for Bayesian Inference in Matrix and Tensor Factorization Models » Flux des commentaires" href="https://fbimatrix.wp.imt.fr/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="FBIMATRIX: Parallel and Distributed Markov Chain Monte Carlo for Bayesian Inference in Matrix and Tensor Factorization Models »  Flux des commentaires" href="https://fbimatrix.wp.imt.fr/page-d-exemple/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/fbimatrix.wp.imt.fr\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.7"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="fbimatrix_files/wp-emoji-release.js" type="text/javascript" defer="defer"></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="fbimatrix_files/style_002.css" type="text/css" media="all">
+<link rel="stylesheet" id="wp-block-library-theme-css" href="fbimatrix_files/theme.css" type="text/css" media="all">
+<link rel="stylesheet" id="twentytwelve-fonts-css" href="fbimatrix_files/css.css" type="text/css" media="all">
+<link rel="stylesheet" id="twentytwelve-style-css" href="fbimatrix_files/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="twentytwelve-block-style-css" href="fbimatrix_files/blocks.css" type="text/css" media="all">
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentytwelve-ie-css'  href='https://fbimatrix.wp.imt.fr/wp-content/themes/twentytwelve/css/ie.css?ver=20150214' type='text/css' media='all' />
+<![endif]-->
+<script type="text/javascript" src="fbimatrix_files/jquery.js" id="jquery-core-js"></script>
+<script type="text/javascript" src="fbimatrix_files/jquery-migrate.js" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="https://fbimatrix.wp.imt.fr/wp-json/"><link rel="alternate" type="application/json" href="https://fbimatrix.wp.imt.fr/wp-json/wp/v2/pages/2"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://fbimatrix.wp.imt.fr/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://fbimatrix.wp.imt.fr/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 5.7">
+<link rel="canonical" href="https://fbimatrix.wp.imt.fr/">
+<link rel="shortlink" href="https://fbimatrix.wp.imt.fr/">
+<link rel="alternate" type="application/json+oembed" href="https://fbimatrix.wp.imt.fr/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ffbimatrix.wp.imt.fr%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://fbimatrix.wp.imt.fr/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ffbimatrix.wp.imt.fr%2F&amp;format=xml">
+</head>
+
+<body class="home page-template-default page page-id-2 wp-embed-responsive full-width custom-font-enabled single-author">
+<div id="page" class="hfeed site">
+	<header id="masthead" class="site-header" role="banner">
+		<hgroup>
+			<h1 class="site-title"><a href="https://fbimatrix.wp.imt.fr/" title="FBIMATRIX: Parallel and Distributed Markov Chain Monte Carlo for Bayesian Inference in Matrix and Tensor Factorization Models" rel="home">FBIMATRIX: Parallel and Distributed Markov Chain Monte Carlo for Bayesian Inference in Matrix and Tensor Factorization Models</a></h1>
+			<h2 class="site-description">International collaborative research project funded by ANR and TUBITAK</h2>
+		</hgroup>
+
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle">Menu</button>
+			<a class="assistive-text" href="#content" title="Aller au contenu">Aller au contenu</a>
+			<div class="nav-menu"><ul>
+<li class="current_page_item"><a href="https://fbimatrix.wp.imt.fr/">Accueil</a></li></ul></div>
+		</nav><!-- #site-navigation -->
+
+			</header><!-- #masthead -->
+
+	<div id="main" class="wrapper">
+
+	<div id="primary" class="site-content">
+		<div id="content" role="main">
+
+							
+	<article id="post-2" class="post-2 page type-page status-publish hentry">
+		<header class="entry-header">
+													<h1 class="entry-title"></h1>
+		</header>
+
+		<div class="entry-content">
+			<p style="text-align: center"><strong>FBIMATRIX</strong> (<strong>F</strong>ull <strong>B</strong>ayesian <strong>I</strong>nference in <strong>Matrix</strong> and Tensor Factorization Models)</p>
+<p style="text-align: center"><strong>2017-2020</strong></p>
+<p style="text-align: center"><strong>ANR-16-CE23-0014</strong></p>
+<p><img loading="lazy" class="wp-image-46 size-medium aligncenter" src="fbimatrix_files/logo-funded-by-ANR-290x300.jpg" alt="" srcset="fbimatrix_files/logo-funded-by-ANR-290x300.jpg 290w, fbimatrix_files/logo-funded-by-ANR-768x795.jpg 768w, fbimatrix_files/logo-funded-by-ANR-990x1024.jpg 990w, fbimatrix_files/logo-funded-by-ANR-624x646.jpg 624w, fbimatrix_files/logo-funded-by-ANR.jpg 1181w" sizes="(max-width: 290px) 100vw, 290px" width="290" height="300"></p>
+<p style="text-align: left">FBIMATRIX is an international collaborative research project that is jointly supported by the Agence Nationale de la Recherche <a href="http://www.agence-nationale-recherche.fr/">(ANR)</a>&nbsp;and the Scientific and Technological Research Council of Turkey (<a href="http://www.tubitak.gov.tr/">TUBITAK</a>).</p>
+<h2>Scientific Scope:</h2>
+<p>Matrix and tensor factorization methods provide a unifying view for a
+ broad spectrum of techniques in machine learning and signal processing,
+ providing both sensible statistical models for datasets as well as 
+efficient computational procedures framed as decomposition algorithms. 
+So far, algebraic or optimization based approaches prevailed for 
+computation of such factorizations. In contrast, the FBIMATRIX project 
+aims to develop the state-of-the-art Markov Chain Monte Carlo (MCMC) 
+methods for Full Bayesian Inference in MATRIX and tensor factorization 
+models. The randomization of Monte Carlo is useful in both Bayesian and 
+non-Bayesian analysis such as model selection, model averaging, privacy 
+preservation or simply better accuracy in computing approximate 
+solutions. MCMC methods are generally perceived as being computationally
+ very demanding and impractical, yet by exploiting parallel and 
+distributed computation, we wish to push the state-of-the-art in terms 
+of scalability, statistical efficiency, computational and communication 
+complexity. In fact, we perceive MCMC as a natural general purpose 
+computational tool of the future for inference and model selection in 
+distributed data, eventually complementing optimization for certain big 
+data problems due to its inherently randomized nature. The project will 
+address Bayesian model selection and model averaging for factorization 
+models, using parallel and distributed computation and current advances 
+in Hybrid Monte Carlo methods that simulate an augmented stochastic 
+dynamics. As such, we aim at developing faster algorithms for hard 
+computational problems such as marginal likelihood estimation and 
+improving convergence rates. We will illustrate the practical utility of
+ the developed parallel and distributed MCMC methods on two challenging 
+applications from two domains: audio source separation and missing link 
+prediction.</p>
+<h2>Partners:</h2>
+<p>French Side:</p>
+<ul>
+<li><a href="https://www.telecom-paristech.fr/">Télécom ParisTech</a> (scientific coordinator: Assoc. Prof. Umut Simsekli)</li>
+</ul>
+<p>Turkish Side:</p>
+<ul>
+<li><a href="http://www.boun.edu.tr/">Boğaziçi University</a> (scientific coordinator: Prof. A. Taylan Cemgil)</li>
+<li><a href="http://www.sabanciuniv.edu/">Sabancı University</a></li>
+</ul>
+<h2>Publications and Pre-prints:</h2>
+<h4>Journals</h4>
+<ul>
+<li>T. H. Nguyen, U. Şimşekli, G. Richard, A. T. Cemgil, <em><a href="https://ieeexplore.ieee.org/document/8329511/" target="_blank" rel="external noopener noreferrer">«&nbsp;Efficient Bayesian Model Selection in PARAFAC via Stochastic Thermodynamic Integration&nbsp;»</a></em>, IEEE Signal Processing Letters (<strong>SPL</strong>), <strong>2018</strong></li>
+</ul>
+<h4>International Conferences</h4>
+<ul>
+<li>T. H, Nguyen, U. Şimşekli, M. Gürbüzbalaban, G. Richard, <em>«&nbsp;<a href="http://papers.nips.cc/paper/8320-first-exit-time-analysis-of-stochastic-gradient-descent-under-heavy-tailed-gradient-noise.pdf">First Exit Time Analysis of Stochastic Gradient Descent Under Heavy-Tailed Gradient Noise</a>«&nbsp;</em>, Advances in Neural Information Processing Systems Conference (<strong>NeurIPS</strong>), Vancouver, British Columbia, Canada, <strong>2019</strong></li>
+<li>K. Nadjahi, A. Durmus, U. Şimşekli, R. Badeau, <a href="https://papers.nips.cc/paper/8318-asymptotic-guarantees-for-learning-generative-models-with-the-sliced-wasserstein-distance.pdf"><em>«&nbsp;Asymptotic Guarantees for Learning Generative Models with the Sliced-Wasserstein Distance&nbsp;»</em></a>, Advances in Neural Information Processing Systems Conference (<strong>NeurIPS</strong>), Vancouver, British Columbia, Canada, <strong>2019</strong> (Spotlight Presentation)</li>
+<li>S. Kolouri, K. Nadjahi, U. Şimşekli, R. Badeau, G. K. Rohde,<a href="https://papers.nips.cc/paper/8319-generalized-sliced-wasserstein-distances.pdf"><em> «&nbsp;Generalized Sliced Wasserstein Distances&nbsp;»</em></a>, Advances in Neural Information Processing Systems Conference (<strong>NeurIPS</strong>), Vancouver, British Columbia, Canada, <strong>2019</strong></li>
+<li>U. Şimşekli, L. Sagun, M. Gürbüzbalaban, <em><a href="https://arxiv.org/pdf/1901.06053.pdf" target="_blank" rel="external noopener noreferrer">«&nbsp;A Tail-Index Analysis of Stochastic Gradient Noise in Deep Neural Networks&nbsp;»</a></em><em>, </em>International Conference on Machine Learning (<strong>ICML</strong>),Long Beach, CA, USA,&nbsp;<strong>2019</strong></li>
+<li>T. H. Nguyen, U. Şimşekli, G. Richard, <em><a href="https://arxiv.org/pdf/1901.07487.pdf" target="_blank" rel="external noopener noreferrer">«&nbsp;Non-Asymptotic Analysis of Fractional Langevin Monte Carlo for Non-Convex Optimization&nbsp;»</a></em>, International Conference on Machine Learning (<strong>ICML</strong>),Long Beach, CA, USA,&nbsp;<strong>2019</strong></li>
+<li>A. Liutkus, U. Şimşekli, S. Majeswsky, A. Durmus, F. Stoter, <a href="https://arxiv.org/pdf/1806.08141.pdf" target="_blank" rel="external noopener noreferrer">“</a><em><a href="https://arxiv.org/pdf/1806.08141.pdf" target="_blank" rel="external noopener noreferrer">Sliced-Wasserstein Flows: Nonparametric Generative Modeling via Optimal Transport and Diffusions</a></em><a href="https://arxiv.org/pdf/1806.08141.pdf" target="_blank" rel="external noopener noreferrer">”</a>, International Conference on Machine Learning (<strong>ICML</strong>),Long Beach, CA, USA,&nbsp;<strong>2019</strong></li>
+<li>T. Birdal, U. Şimşekli, <em>«&nbsp;Probabilistic Permutation Synchronization using the Riemannian Structure of the Birkhoff Polytope&nbsp;»,</em>&nbsp;IEEE Conference on Computer Vision and Pattern Recognition (<strong>CVPR</strong>), Long Beach, CA, USA, <strong>2019</strong></li>
+<li>S. Leglaive, U. Şimşekli, A. Liutkus, L. Girin, R. Horaud, <a href="https://hal.archives-ouvertes.fr/hal-02005106"><em>«&nbsp;Speech Enhancement with Variational Autoencoders and Alpha-Stable Distributions&nbsp;»</em></a>, IEEE International Conference on Acoustics, Speech, and Signal Processing (<strong>ICASSP</strong>), Brighton, UK, <strong>2019</strong></li>
+<li>T. Birdal, U. Şimşekli, M. O. Eken, S. Ilic, <a href="https://arxiv.org/pdf/1805.12279.pdf" target="_blank" rel="external noopener noreferrer">“</a><em><a href="https://arxiv.org/pdf/1805.12279.pdf" target="_blank" rel="external noopener noreferrer">Bayesian Pose Graph Optimization via Bingham Distributions and Tempered Geodesic MCMC</a></em><a href="https://arxiv.org/pdf/1805.12279.pdf" target="_blank" rel="external noopener noreferrer">”</a>, Advances in Neural Information Processing Systems Conference (<strong>NeurIPS</strong>), Montréal, Quebec, Canada, <strong>2018</strong></li>
+<li>U. Şimşekli, Ç. Yildiz, T. H. Nguyen, G. Richard, A. T. Cemgil,<a href="https://arxiv.org/pdf/1806.02617.pdf"> “Asynchronous Stochastic Quasi-Newton MCMC for Non-Convex Optimization”</a>, International Conference on Machine Learning (<strong>ICML</strong>), Stockholm, Sweden, <strong>2018</strong></li>
+<li>M. Fontaine, F. R. Stöter, A. Liutkus, U. Şimşekli, R. Serizel, R. Badeau, <em><a href="https://hal-lirmm.ccsd.cnrs.fr/lirmm-01766795/file/LVA-ICA2018_046_original_v5.pdf" target="_blank" rel="external noopener noreferrer">«&nbsp;Multichannel Audio Modeling with Elliptically Stable Tensor Decomposition&nbsp;»</a></em>, International Conference on Latent Variable Analysis and Signal Separation (<strong>LVA-ICA</strong>), Guildford, UK, <strong>2018</strong></li>
+<li>U. Şimşekli, H. Tinky-Winky, S. Leglaive, A. Liutkus, R. Badeau, G. Richard, <em><a href="https://perso.telecom-paristech.fr/simsekli/resources/simsekli_icassp_2018.pdf" target="_blank" rel="external noopener noreferrer">«&nbsp;Alpha-stable Low-rank Plus Residual Decomposition For Speech Enhancement&nbsp;»</a></em>, IEEE International Conference on Acoustics, Speech, and Signal Processing (<strong>ICASSP</strong>), Calgary, AB, Canada, <strong>2018</strong></li>
+<li>M. Jas, T. Dupré La Tour, U. Şimşekli, A. Gramfort,<em> «&nbsp;<a href="https://arxiv.org/abs/1705.08006">Learning the Morphology of Brain Signals Using Alpha-Stable Convolutional Sparse Coding</a>&nbsp;»&nbsp;</em>, Advances in Neural Information Processing Systems (<strong>NIPS</strong>), Long Beach, CA, USA, <strong>2017</strong></li>
+<li>U. Şimşekli,<em> «&nbsp;<a href="https://arxiv.org/abs/1706.03649">Fractional Langevin Monte Carlo: Exploring Lévy Driven Stochastic Differential Equations for Markov Chain Monte Carlo</a>&nbsp;»&nbsp;</em>, International Conference on Machine Learning (<strong>ICML</strong>), Sydney, Australia, <strong>2017</strong></li>
+<li>U. Şimşekli, A. Durmus, R. Badeau, G. Richard, E. Moulines, A. T. Cemgil,<em> «&nbsp;<a href="https://hal.archives-ouvertes.fr/hal-01416357">Parallelized Stochastic Gradient Markov Chain Monte Carlo Algorithms For Non-negative Matrix Factorization</a>&nbsp;»&nbsp;</em>, IEEE International Conference on Acoustics, Speech, and Signal Processing (<strong>ICASSP</strong>), New Orleans, LA, USA, <strong>2017</strong></li>
+</ul>
+<h4>International Workshops</h4>
+<ul>
+<li>M. B. Kurutmaz, M. Barsbey, A. T. Cemgil, S. Yildirim, U. Şimşekli, <a href="https://openreview.net/pdf?id=ByeB5k2Etr"><em>«&nbsp;Bayesian Model Selection for Identifying Markov Equivalent Causal Graphs&nbsp;»</em></a>, Advances in Approximate Bayesian Inference Workshop (<strong>AABI</strong>), Vancouver, British Columbia, Canada, <strong>2019</strong></li>
+<li>M. B. Kurutmaz, A. T. Cemgil, U. Şimşekli, M. Barsbey, S. Yildirim, <a href="http://approximateinference.org/2018/accepted/KurutmazEtAl2018.pdf">«&nbsp;Bayesian Learning of Non-Negative Matrix/Tensor Factorizations by Simulating Polya Urns&nbsp;»</a>, Advances in Approximate Bayesian Inference Workshop (<strong>AABI</strong>), Montréal, Quebec, Canada, <strong>2018</strong></li>
+<li>M. B. Kurutmaz, A. T. Cemgil, U. Şimşekli, S. Yildirim, <em><a href="http://approximateinference.org/2017/accepted/KurutmazEtAl2017.pdf" target="_blank" rel="external noopener noreferrer">«&nbsp;Bayesian Nonnegative Matrix Factorization as an Allocation Model&nbsp;»</a></em>, Advances in Approximate Bayesian Inference Workshop (<strong>AABI</strong>), in Neural Information Processing Systems Conference (<strong>NIPS</strong>), Long Beach, California, USA, <strong>2017</strong></li>
+</ul>
+<h4>Preprints</h4>
+<ul>
+<li>U. Şimşekli, M. Gürbüzbalaban, L. Sagun, T. H. Nguyen, G. Richard, <a href="https://arxiv.org/pdf/1912.00018.pdf"><em>«&nbsp;On the Heavy-Tailed Theory of Stochastic Gradient Descent for Deep Neural Networks&nbsp;»</em></a>, arXiv, <strong>2019</strong></li>
+<li>A. T. Cemgil, M. B. Kurutmaz, S. Yildirim, M. Barsbey,&nbsp;U. Şimşekli,&nbsp;<em><a href="https://arxiv.org/abs/1903.04478" target="_blank" rel="external noopener noreferrer">«&nbsp;Bayesian
+ Allocation Model: Inference by Sequential Monte Carlo for Nonnegative 
+Tensor Factorizations and Topic Models using Polya Urns&nbsp;»</a></em><em>,&nbsp;</em>arXiv,&nbsp;<strong>2019</strong></li>
+</ul>
+<h2>Recent Events:</h2>
+<ul>
+<li>Kickoff meeting, Istanbul, 30 March, 2017</li>
+<li>Scientific meeting, Paris, 26-30 June, 2017</li>
+<li>Scientific meeting, Paris, 10-26 August, 2018</li>
+<li>Scientific meeting, Istanbul, 09-15 October, 2018</li>
+</ul>
+<h2></h2>
+					</div><!-- .entry-content -->
+		<footer class="entry-meta">
+					</footer><!-- .entry-meta -->
+	</article><!-- #post -->
+				
+<div id="comments" class="comments-area">
+
+	
+	
+	
+</div><!-- #comments .comments-area -->
+			
+		</div><!-- #content -->
+	</div><!-- #primary -->
+
+
+		</div><!-- #main .wrapper -->
+	<footer id="colophon" role="contentinfo">
+		<div class="site-info">
+									<a href="https://wordpress.org/" class="imprint" title="Plate-forme de publication personnelle à la pointe de la sémantique">
+				Fièrement propulsé par WordPress			</a>
+		</div><!-- .site-info -->
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+<script type="text/javascript" src="fbimatrix_files/navigation.js" id="twentytwelve-navigation-js"></script>
+<script type="text/javascript" src="fbimatrix_files/wp-embed.js" id="wp-embed-js"></script>
+
+
+</body></html>
