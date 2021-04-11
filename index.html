@@ -3,9 +3,8 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
-<title>FBIMATRIX: Parallel and Distributed Markov Chain Monte Carlo for 
-Bayesian Inference in Matrix and Tensor Factorization Models | 
-International collaborative research project funded by ANR and TUBITAK</title>
+<title>FBIMATRIX: Matris ve Tensör Ayrışım Modellerinde Bayesci Çıkarım için Paralel ve Dağıtık Markov Zinciri Monte Carlo Yöntemleri | 
+TÜBİTAK ve ANR destekli uluslararası araştırma projesi</title>
 <link rel="profile" href="https://gmpg.org/xfn/11">
 <link rel="pingback" href="https://fbimatrix.github.io/xmlrpc.php">
 <meta name="robots" content="max-image-preview:large">
@@ -51,8 +50,8 @@ img.emoji {
 <div id="page" class="hfeed site">
 	<header id="masthead" class="site-header" role="banner">
 		<hgroup>
-			<h1 class="site-title"><a href="https://fbimatrix.github.io/" title="FBIMATRIX: Parallel and Distributed Markov Chain Monte Carlo for Bayesian Inference in Matrix and Tensor Factorization Models" rel="home">FBIMATRIX: Parallel and Distributed Markov Chain Monte Carlo for Bayesian Inference in Matrix and Tensor Factorization Models</a></h1>
-			<h2 class="site-description">International collaborative research project funded by ANR and TUBITAK</h2>
+			<h1 class="site-title"><a href="https://fbimatrix.github.io/" title="FBIMATRIX: Matris ve Tensör Ayrışım Modellerinde Bayesci Çıkarım için Paralel ve Dağıtık Markov Zinciri Monte Carlo Yöntemleri" rel="home">FBIMATRIX: Matris ve Tensör Ayrışım Modellerinde Bayesci Çıkarım için Paralel ve Dağıtık Markov Zinciri Monte Carlo Yöntemleri</a></h1>
+			<h2 class="site-description">TÜBİTAK ve ANR destekli uluslararası araştırma projesi</h2>
 		</hgroup>
 
 
@@ -75,41 +74,20 @@ img.emoji {
 <p style="text-align: center"><strong>2017-2020</strong></p>
 <p style="text-align: center"><strong>ANR-16-CE23-0014</strong></p>
 <p><img loading="lazy" class="wp-image-46 size-medium aligncenter" src="fbimatrix_files/logo-funded-by-ANR-290x300.jpg" alt="" srcset="fbimatrix_files/logo-funded-by-ANR-290x300.jpg 290w, fbimatrix_files/logo-funded-by-ANR-768x795.jpg 768w, fbimatrix_files/logo-funded-by-ANR-990x1024.jpg 990w, fbimatrix_files/logo-funded-by-ANR-624x646.jpg 624w, fbimatrix_files/logo-funded-by-ANR.jpg 1181w" sizes="(max-width: 290px) 100vw, 290px" width="290" height="300"></p>
-<p style="text-align: left">FBIMATRIX is an international collaborative research project that is jointly supported by the Agence Nationale de la Recherche <a href="http://www.agence-nationale-recherche.fr/">(ANR)</a>&nbsp;and the Scientific and Technological Research Council of Turkey (<a href="http://www.tubitak.gov.tr/">TUBITAK</a>).</p>
-<h2>Scientific Scope:</h2>
-<p>Matrix and tensor factorization methods provide a unifying view for a
- broad spectrum of techniques in machine learning and signal processing,
- providing both sensible statistical models for datasets as well as 
-efficient computational procedures framed as decomposition algorithms. 
-So far, algebraic or optimization based approaches prevailed for 
-computation of such factorizations. In contrast, the FBIMATRIX project 
-aims to develop the state-of-the-art Markov Chain Monte Carlo (MCMC) 
-methods for Full Bayesian Inference in MATRIX and tensor factorization 
-models. The randomization of Monte Carlo is useful in both Bayesian and 
-non-Bayesian analysis such as model selection, model averaging, privacy 
-preservation or simply better accuracy in computing approximate 
-solutions. MCMC methods are generally perceived as being computationally
- very demanding and impractical, yet by exploiting parallel and 
-distributed computation, we wish to push the state-of-the-art in terms 
-of scalability, statistical efficiency, computational and communication 
-complexity. In fact, we perceive MCMC as a natural general purpose 
-computational tool of the future for inference and model selection in 
-distributed data, eventually complementing optimization for certain big 
-data problems due to its inherently randomized nature. The project will 
-address Bayesian model selection and model averaging for factorization 
-models, using parallel and distributed computation and current advances 
-in Hybrid Monte Carlo methods that simulate an augmented stochastic 
-dynamics. As such, we aim at developing faster algorithms for hard 
-computational problems such as marginal likelihood estimation and 
-improving convergence rates. We will illustrate the practical utility of
- the developed parallel and distributed MCMC methods on two challenging 
-applications from two domains: audio source separation and missing link 
-prediction.</p>
-<h2>Partners:</h2>
-<p>French Side:</p>
+<p style="text-align: left">FBIMATRIX Türkiye Bilimsel ve Teknolojik Araştırma Kurumu (<a href="http://www.tubitak.gov.tr/">TUBITAK</a>) ve Agence Nationale de la Recherche <a href="http://www.agence-nationale-recherche.fr/">(ANR)</a>&nbsp tarafından desteklenen uluslararası bir araştırma projesidir.</p>
+<h2>Proje özeti</h2>
+<p>Bu proje matris ve tensör ayrışımları için verimli ve etkili Bayesci yöntemler geliştirmeyi hedeflemektedir. Projenin alanyazına ana katkılarından biri olarak, hesaplamalarda paralellikten faydalanıp, hesaplama zamanını azaltarak büyük tensörlerde uygulanabilir olan ve alanyazında en ileri algoritmalardan daha iyi yakınsama performansı gösteren yeni Markov zinciri Monte Carlo yöntemleri teklif ediyoruz. Projenin bir başka merkezi çıktısı, sayma verilerini modellemeye imkan veren Bayesci atama modeli (BAM) adını verdiğimiz yeni bir dinamik üretici modeldir. BAM birçok olasılıksal negatif olmayan tensör ayrışımı (NTA) ve konu modelini aynı çerçeve içerisinde toplamaktadır. BAM'da, atamalar bir Bayesci ağ kullanılarak yapılmakta, bu Bayesci ağın koşullu olasılık tabloları ise analitik olarak toplanarak ortak dağılımdan elenebilmektedir. Bu çalışmada, bu birleştirici BAM modelini yeni çıkarım yöntemleri ile de donatıyoruz. Bu yöntemlerden biri, hem model puanlamada hem de tensör ayrışımı görevinde kullanılabilen bir varyasyonel Bayes yöntemidir.</p>
+<p>Bir başka ana yöntemsel katkımız ise sayma verilerinde tensör modellerinin puanlanması ile alakalıdır. BAM'daki atamaları ardışık olarak görüldüğünde ortaya çıkan marjinal sürecin, tam sayı değerli kendini güçlendiren \Polya küpü süreçlerinin \PolyaBayes süreci adını verdiğimiz özel bir türü olduğunu gösteriyoruz. Bu \Polya küpü kurgusunu kullanarak BAM'da marjinal olabilirlik kestirimi için yeni bir ardışık Monte Carlo (AMC) algoritması teklif ediyoruz; bu algoritma NTA ve konu modellerini de içeren ayrık değişkenli, gizli değişkenler içeren Bayesci ağlar için ortak bir model puanlama yöntemi olarak öne çıkmaktadır. AMC kestiricisinin bir dikkat çekici özelliği, genellikle yanlı olan varyasyonel Bayes algoritmalarından farklı olarak yansız olmasıdır. Verinin seyrekliğinden faydalanıyor olması bu AMC kestiricisinin bir başka önemli özelliğidir, bu sayede ilişkisel verilerde sıklıkla karşılaşılan büyük seyrek sayma tensörlerinin analizinde ölçeklenebilir olmaktadır. Ayrıca, AMC-bazlı marjinal olabilirlik kestiricimizin Bayesci model seçimi ve hiperparametre kestirimi için kullanılabilecek, ilkeli ve (gerçek sonsal dağılıma uyum göstermek manasında) doğru bir Markov zinciri Monte Carlo algoritmasına entegre edilebileceğini gösteriyoruz. Son olarak, BAM'ın modelleme kapasitesi ve model puanlama ve karşılaştırmada olanak sağladığı yöntemlerden ilham alarak çalışmamızı hesapsal nedensellik keşfi doğrultusunda genişletiyoruz. Tamamen gözlemlere dayanan bir veri kümesini yaratmış olabilecek yegane nedensel modelin seçimine imkan verecek model ve çıkarım algoritmaları geliştiriyoruz ve bu algoritmaları yapay ve gerçek veriler üzerinde test ediyoruz.</p>
+<h2>Proje web sitesi:</h2>
+<p>Proje çıktıları ile alakalı ayrıntılı bilgiler ilgili <a href="https://fbimatrix.wp.imt.fr/">web sitesinde</a> görülebilir.</p>
+<h2>Proje kaynak kodları:</h2>
+<p>Proje boyunca gerçeklenen kaynak kodlar aşağıdaki bağlantılarda görülebilir:</p>
 <ul>
-<li><a href="https://www.telecom-paristech.fr/">Télécom ParisTech</a> (scientific coordinator: Assoc. Prof. Umut Simsekli)</li>
+<li><a href="https://github.com/atcemgil/bam">https://github.com/atcemgil/bam</a>  </li>
+<li><a href="https://github.com/mehmetburakkurutmaz/Bayesian-Model-Selection-for-Identifying-Markov-Equivalent-Causal-Graphs">https://github.com/mehmetburakkurutmaz/Bayesian-Model-Selection-for-Identifying-Markov-Equivalent-Causal-Graphs</a>  </li>
+<li><a href="https://github.com/sinanyildirim/BAM-JSTSP-code">https://github.com/sinanyildirim/BAM-JSTSP-code</a>  </li>
 </ul>
+<!--			
 <p>Turkish Side:</p>
 <ul>
 <li><a href="http://www.boun.edu.tr/">Boğaziçi University</a> (scientific coordinator: Prof. A. Taylan Cemgil)</li>
@@ -159,6 +137,7 @@ Tensor Factorizations and Topic Models using Polya Urns&nbsp;»</a></em><em>,&nb
 <li>Scientific meeting, Istanbul, 09-15 October, 2018</li>
 </ul>
 <h2></h2>
+-->
 					</div><!-- .entry-content -->
 		<footer class="entry-meta">
 					</footer><!-- .entry-meta -->
